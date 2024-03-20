@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive website</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="responsive.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+
+  <!-- header section  -->
+
+  <header id="header">
+
+    <div class="logo">
+      <h1><a href="#">GP<span>.</span></a></h1>
+    </div>
+
+    <nav class="nav-bar">
+
+      <ul class="main-bar">
+        <li class="nav-active">
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#about-a">About</a>
+        </li>
+        <li>
+          <a href="#services-s">Services</a>
+        </li>
+        <li>
+          <a href="#portfolio-p">Portfolio</a>
+        </li>
+        <li>
+          <a href="#team-t">Team</a>
+        </li>
+        <li class="drop">
+          <a href="#">Drop Down <i class="fa-solid fa-angle-down nav-icon"></i></a>
+
+          <ul class="dropdown">
+            <li><a href="#">Drop Down 1</a></li>
+            <li class="drop1">
+              <a href="#">Deep Drop Down <i class="fa-solid fa-angle-right nav-icon"></i></a>
+              <ul class="dropdown1">
+                <li><a href="#">Deep Drop Down 1</a></li>
+                <li><a href="#">Deep Drop Down 2</a></li>
+                <li><a href="#">Deep Drop Down 3</a></li>
+                <li><a href="#">Deep Drop Down 4</a></li>
+                <li><a href="#">Deep Drop Down 5</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Drop Down 2</a></li>
+            <li><a href="#">Drop Down 3</a></li>
+            <li><a href="#">Drop Down 4</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#contact-c">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+    
+
+    <div class="head-btn">
+      <a class="btn">Get Started</a>
+    </div>
+
+ 
+
+    <nav class="nav-bar1">
+
+      <a href="#"  onclick="showSidebar()" class="hide-on-mobile"><i class="fa-solid fa-bars sbar"></i></a>
+
+      <ul class="side-bar">
+        <li onclick="hideSidebar()" class="aside"><a href="#"><i class="fa-solid fa-xmark sbar"></i></a></li>
+        <li class="nav-active">
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#about-a">About</a>
+        </li>
+        <li>
+          <a href="#services-s">Services</a>
+        </li>
+        <li>
+          <a href="#portfolio-p">Portfolio</a>
+        </li>
+        <li>
+          <a href="#team-t">Team</a>
+        </li>
+        <li class="s-drop">
+          <a href="#">Drop Down <i class="fa-solid fa-angle-down nav-icon"></i></a>
+
+          <ul class="s-dropdown">
+            <li><a href="#">Drop Down 1</a></li>
+            <li class="s-drop1">
+              <a href="#">Deep Drop Down <i class="fa-solid fa-angle-right nav-icon"></i></a>
+              <ul class="s-dropdown1">
+                <li><a href="#">Deep Drop Down 1</a></li>
+                <li><a href="#">Deep Drop Down 2</a></li>
+                <li><a href="#">Deep Drop Down 3</a></li>
+                <li><a href="#">Deep Drop Down 4</a></li>
+                <li><a href="#">Deep Drop Down 5</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Drop Down 2</a></li>
+            <li><a href="#">Drop Down 3</a></li>
+            <li><a href="#">Drop Down 4</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#contact-c">Contact</a>
+        </li>
+      </ul>
+
+
+
+    </nav>
+
+
+
+
+  </header>
+
+  <!-- banner section  -->
+
+  <section class="banner">
+
+    <div class="slider">
+      <div class="overlay">
+        <div class="details">
+          <h2>Powerful Digital Solutions With Gp<span>.</span></h2>
+          <p>We are team of talented digital marketers</p>
+        </div>
+
+        <div class="details-box">
+
+          <div class="box1">
+            <i class="fa-solid fa-store"></i>
+            <p>Lorem Ipsum</p>
+          </div>
+
+          <div class="box1">
+            <i class="fa-solid fa-square-poll-vertical"></i>
+            <p>Dolor Sitema</p>
+          </div>
+
+          <div class="box1">
+            <i class="fa-regular fa-calendar-days"></i>
+            <p>Sedare Perspiciatis</p>
+          </div>
+
+          <div class="box1">
+            <i class="fa-solid fa-paint-roller"></i>
+            <p>Magni Dolores</p>
+          </div>
+
+          <div class="box1">
+            <i class="fa-solid fa-database"></i>
+            <p>Nemos Enimade</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- about section  -->
+
+  <section class="about-section" id="about-a">
+
+    <div class="about">
+
+      <div class="about-info" data-aos="zoom-in" data-aos-duration="1000">
+        <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
+        <p class="about-p1">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua.
+        </p>
+        <ul>
+          <li><i class="fa-solid fa-check-double about-icon"></i>Ullamco laboris nisi ut aliquip ex ea commodo
+            consequat.</li>
+          <li><i class="fa-solid fa-check-double about-icon"></i>Duis aute irure dolor in reprehenderit in voluptate
+            velit.</li>
+          <li><i class="fa-solid fa-check-double about-icon"></i>Ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu
+            fugiat nulla pariatur.</li>
+        </ul>
+        <p class="p2">Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+          voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident
+        </p>
+      </div>
+
+      <div class="about-image" data-aos="zoom-in" data-aos-duration="1000">
+        <img src="images/about.jpg" alt="office image">
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- slide section  -->
+
+  <section class="slide-section">
+
+    <div class="slides" data-aos="zoom-in" data-aos-duration="1000">
+
+      <div class="slide-info1">
+        <img src="images/client-1.png" alt="client images">
+      </div>
+
+      <div class="slide-info1">
+        <img src="images/client-2.png" alt="client images">
+      </div>
+
+      <div class="slide-info1">
+        <img src="images/client-3.png" alt="client images">
+      </div>
+
+      <div class="slide-info1">
+        <img src="images/client-4.png" alt="client images">
+      </div>
+
+      <div class="slide-info1">
+        <img src="images/client-5.png" alt="client images">
+      </div>
+
+      <div class="slide-info1">
+        <img src="images/client-6.png" alt="client images">
+      </div>
+
+      <div class="slide-info1">
+        <img src="images/client-7.png" alt="client images">
+      </div>
+
+      <div class="slide-info1">
+        <img src="images/client-8.png" alt="client images">
+      </div>
+    </div>
+
+    <!-- <div class="slide-circle">
+      <i class="fa-solid fa-circle slide-icon"></i>
+      <i class="fa-solid fa-circle slide-icon"></i>
+      <i class="fa-solid fa-circle slide-icon"></i>
+      <i class="fa-solid fa-circle slide-icon"></i>
+      <i class="fa-solid fa-circle slide-icon"></i>
+      <i class="fa-solid fa-circle slide-icon"></i>
+      <i class="fa-solid fa-circle slide-icon"></i>
+      <i class="fa-solid fa-circle slide-icon"></i>
+    </div> -->
+
+  </section>
+
+
+  <!-- features section1  -->
+
+  <section class="features-section1">
+
+    <div class="features-image" data-aos="zoom-in" data-aos-duration="1000">
+      <img src="images/features.jpg" alt="feature image">
+    </div>
+
+    <div class="feature-info">
+
+      <div class="feature1" data-aos="zoom-in" data-aos-duration="1000">
+        <i class="fa-solid fa-receipt feature-icon"></i>
+
+        <div class="feature1-info">
+          <h4>Est labore ad</h4>
+          <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
+        </div>
+
+      </div>
+
+      <div class="feature1" data-aos="zoom-in" data-aos-duration="1000">
+        <i class="fa-solid fa-cube feature-icon"></i>
+
+        <div class="feature1-info">
+          <h4>Harum esse qui</h4>
+          <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+        </div>
+
+      </div>
+
+      <div class="feature1" data-aos="zoom-in" data-aos-duration="1000">
+        <i class="fa-regular fa-images feature-icon"></i>
+
+        <div class="feature1-info">
+          <h4>Aut occaecati</h4>
+          <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
+        </div>
+
+      </div>
+
+      <div class="feature1" data-aos="zoom-in" data-aos-duration="1000">
+        <i class="fa-solid fa-shield feature-icon"></i>
+
+        <div class="feature1-info">
+          <h4>Beatae veritatis</h4>
+          <p>Expedita veritatis consequuntur nihil tempore laudantium vitae denat pacta</p>
+        </div>
+
+      </div>
+
+    </div>
+
+
+  </section>
+
+  <!-- services section  -->
+
+  <section class="service-section" id="services-s">
+
+    <p class="s1" data-aos="fade-up" data-aos-duration="1000">SERVICES</p>
+    <h2 data-aos="fade-up" data-aos-duration="1000">CHECK OUR SERVICES</h2>
+
+    <div class="services">
+
+      <div class="service1" data-aos="zoom-in" data-aos-duration="1000">
+        <div class="s-icon">
+          <i class="fa-solid fa-globe"></i>
+        </div>
+        <p class="ser-head">Lorem Ipsum</p>
+        <p class="ser-info">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+      </div>
+
+      <div class="service1" data-aos="zoom-in" data-aos-duration="1000">
+        <div class="s-icon">
+          <i class="fa-solid fa-file"></i>
+        </div>
+        <p class="ser-head">Sed ut perspiciatis</p>
+        <p class="ser-info">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+      </div>
+
+      <div class="service1" data-aos="zoom-in" data-aos-duration="1000">
+        <div class="s-icon">
+          <i class="fa-solid fa-weight-scale"></i>
+        </div>
+        <p class="ser-head">Magni Dolores</p>
+        <p class="ser-info">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+      </div>
+
+      <div class="service1" data-aos="zoom-in" data-aos-duration="1000">
+        <div class="s-icon">
+          <i class="fa-solid fa-earth-africa"></i>
+        </div>
+        <p class="ser-head">Nemo Enim</p>
+        <p class="ser-info">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+      </div>
+
+      <div class="service1" data-aos="zoom-in" data-aos-duration="1000">
+        <div class="s-icon">
+          <i class="fa-solid fa-display"></i>
+        </div>
+        <p class="ser-head">Dele cardo</p>
+        <p class="ser-info">Quis consequatur saepe eligendi voluptatem consequatur dolor consequuntur</p>
+      </div>
+
+      <div class="service1" data-aos="zoom-in" data-aos-duration="1000">
+        <div class="s-icon">
+          <i class="fa-solid fa-archway"></i>
+        </div>
+        <p class="ser-head">Divera don</p>
+        <p class="ser-info">Modi nostrum vel laborum. Porro fugit error sit minus sapiente sit aspernatur</p>
+      </div>
+
+    </div>
+
+
+  </section>
+
+  <!-- action section  -->
+
+  <section class="action-section">
+
+    <div class="action">
+      <div class="as" data-aos="zoom-in" data-aos-duration="1000">
+        <h3>Call To Action</h3>
+        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <div class="action-btn">
+          <button href="#" class="btn">Call To Action</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- portfolio section  -->
+
+  <section class="portfolio-section" id="portfolio-p">
+
+    <p class="po1" data-aos="fade-up"  data-aos-duration="1000">PORTFOLIO</p>
+    <h2 data-aos="fade-up-right"  data-aos-duration="1000">CHECK OUR PORTFOLIO</h2>
+
+    <div class="portfolio" data-aos="zoom-in" data-aos-duration="1000">
+
+      <div class="port1">
+        <div class="pimg1">
+          <img src="images/portfolio-1.jpg" alt="bottle image">
+          <div class="p1">
+            <p>APP 1</p>
+            <p>APP</p>
+            <a href="#"><i class="fa-solid fa-plus"></i></a>
+            <a href="#"><i class="fa-solid fa-link"></i></a>
+          </div>
+        </div>
+        <div class="pimg1">
+          <img src="images/portfolio-6.jpg" alt="chair image">
+          <div class="p1">
+            <p>APP 1</p>
+            <p>APP</p>
+            <a href="#"><i class="fa-solid fa-plus"></i></a>
+            <a href="#"><i class="fa-solid fa-link"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="port1">
+        <div class="pimg1 pm1">
+          <img src="images/portfolio-2.jpg" alt="coffee cup">
+          <div class="p1">
+            <p>APP 1</p>
+            <p>APP</p>
+            <a href="#"><i class="fa-solid fa-plus"></i></a>
+            <a href="#"><i class="fa-solid fa-link"></i></a>
+          </div>
+        </div>
+        <div class="pimg1 pm2">
+          <img src="images/portfolio-5.jpg" alt="lamp">
+          <div class="p1">
+            <p>APP 1</p>
+            <p>APP</p>
+            <a href="#"><i class="fa-solid fa-plus"></i></a>
+            <a href="#"><i class="fa-solid fa-link"></i></a>
+          </div>
+        </div>
+        <div class="pimg1 pm3">
+          <img src="images/portfolio-9.jpg" alt="watch" >
+          <div class="p1">
+            <p>APP 1</p>
+            <p>APP</p>
+            <a href="#"><i class="fa-solid fa-plus"></i></a>
+            <a href="#"><i class="fa-solid fa-link"></i></a>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="port1 port3">
+        <div class="pimg1 pom1">
+          <img src="images/portfolio-3.jpg" alt="pot">
+          <div class="p1">
+            <p>APP 1</p>
+            <p>APP</p>
+            <a href="#"><i class="fa-solid fa-plus"></i></a>
+            <a href="#"><i class="fa-solid fa-link"></i></a>
+          </div>
+        </div>
+        <div class="pimg1 pom2">
+          <img src="images/portfolio-4.jpg" alt="shades">
+          <div class="p1">
+            <p>APP 1</p>
+            <p>APP</p>
+            <a href="#"><i class="fa-solid fa-plus"></i></a>
+            <a href="#"><i class="fa-solid fa-link"></i></a>
+          </div>
+        </div>
+        <div class="pimg1 pom3">
+          <img src="images/portfolio-7.jpg" alt="camera lens">
+          <div class="p1">
+            <p>APP 1</p>
+            <p>APP</p>
+            <a href="#"><i class="fa-solid fa-plus"></i></a>
+            <a href="#"><i class="fa-solid fa-link"></i></a>
+          </div>
+        </div>
+        <div class="pimg1 pom4">
+          <img src="images/portfolio-8.jpg" alt="glass">
+          <div class="p1">
+            <p>APP 1</p>
+            <p>APP</p>
+            <a href="#"><i class="fa-solid fa-plus"></i></a>
+            <a href="#"><i class="fa-solid fa-link"></i></a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- counter section  -->
+
+  <section class="counter-section">
+
+    <div class="counter-img" data-aos="fade-up"  data-aos-duration="1000">
+
+    </div>
+
+    <div class="counter-info" data-aos="fade-up" data-aos-duration="1000">
+      <h3>Voluptatem dignissimos provident quasi</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Duis aute irure dolor in reprehenderit</p>
+      <div class="counts">
+        <div class="count1">
+          <div class="count-i">
+            <i class="fa-regular fa-face-smile"></i>
+          </div>
+          <div class="count-info">
+            <p class="c1">65</p>
+            <p class="c2"><span>Happy Clients</span> consequuntur voluptas nostrum aliquid ipsam architecto ut.</p>
+          </div>
+        </div>
+
+        <div class="count1">
+          <div class="count-i">
+            <i class="fa-regular fa-file-lines"></i>
+          </div>
+          <div class="count-info">
+            <p class="c1">
+              85</p>
+            <p class="c2"><span>Projects</span> adipisci atque cum quia aspernatur totam laudantium et quia dere tan.
+            </p>
+          </div>
+        </div>
+
+        <div class="count1">
+          <div class="count-i">
+            <i class="fa-regular fa-clock"></i>
+          </div>
+          <div class="count-info">
+            <p class="c1">35</p>
+            <p class="c2"><span>Years of experience</span> aut commodi quaerat modi aliquam nam ducimus aut voluptate
+              non vel.</p>
+          </div>
+        </div>
+
+        <div class="count1">
+          <div class="count-i">
+            <i class="fa-solid fa-award"></i>
+          </div>
+          <div class="count-info">
+            <p class="c1">20</p>
+            <p class="c2"><span>Awards</span> rerum asperiores dolor alias quo reprehenderit eum et nemo pad der</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- feedback section  -->
+
+  <section class="feedback-section">
+
+    <div class="feedback-details">
+
+      <div class="feedbacks" data-aos="zoom-in" data-aos-duration="1000">
+
+        <div class="feedback1">
+          <div class="feed-img">
+            <img src="images/testimonials-2.jpg" alt="person">
+          </div>
+          <div class="feed-info">
+            <h3>Sara Wilsson</h3>
+            <h4>Designer</h4>
+            <p>
+              <i class="fa-solid fa-quote-left"></i> Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.<i class="fa-solid fa-quote-right"></i>
+            </p>
+          </div>
+        </div>
+
+        <div class="feed-circle">
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+        </div>
+      </div>
+      
+
+    </div>
+
+  </section>
+
+<!-- team section  -->
+<section class="team-section" id="team-t">
+
+  <p class="to1">TEAM</p>
+  <h2>CHECK OUR TEAM</h2>
+
+  <div class="team-members">
+
+    <div class="member1" data-aos="fade-up"  data-aos-duration="1000">
+      <div class="mem-img">
+        <img src="images/team-1.jpg" alt="">
+        <div class="mem-social">
+          <a href="#"><i class="fa-brands fa-square-x-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+      </div>
+      <div class="mem-info">
+        <h3>Walter White</h3>
+        <p>Chief Executive Officer</p>
+      </div>
+    </div>
+
+    <div class="member1" data-aos="fade-up"  data-aos-duration="1000">
+      <div class="mem-img">
+        <img src="images/team-2.jpg" alt="">
+        <div class="mem-social">
+          <a href="#"><i class="fa-brands fa-square-x-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+      </div>
+      <div class="mem-info">
+        <h3>Sarah Jhonson</h3>
+        <p>Product Manager</p>
+      </div>
+    </div>
+
+    <div class="member1" data-aos="fade-up"  data-aos-duration="1000">
+      <div class="mem-img">
+        <img src="images/team-3.jpg" alt="">
+        <div class="mem-social">
+          <a href="#"><i class="fa-brands fa-square-x-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+      </div>
+      <div class="mem-info">
+        <h3>William Anderson</h3>
+        <p>CTO</p>
+      </div>
+    </div>
+
+    <div class="member1" data-aos="fade-up"  data-aos-duration="1000">
+      <div class="mem-img">
+        <img src="images/team-4.jpg" alt="">
+        <div class="mem-social">
+          <a href="#"><i class="fa-brands fa-square-x-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+      </div>
+      <div class="mem-info">
+        <h3>Amanda Jepson</h3>
+        <p>Accountant</p>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- contact section  -->
+
+<section class="contact-section" id="contact-c">
+
+  <p class="co1" data-aos="zoom-in" data-aos-duration="1000">CONTACT</p>
+  <h2 data-aos="zoom-in" data-aos-duration="1000">CONTACT US</h2>
+
+  <div class="address" data-aos="zoom-in" data-aos-duration="1000">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d497698.77492875466!2d77.30126945310806!3d12.954459531495921!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670c9b44e6d%3A0xf8dfc3e8517e4fe0!2sBengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1702475585015!5m2!1sen!2sin" width="1200" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+
+  <div class="contact-details">
+    <div class="contact-info">
+
+      <div class="contact1">
+        <div class="contact-icon">
+          <i class="fa-solid fa-location-dot"></i>
+        </div>
+        <div class="con-info">
+          <h3>Location:</h3>
+          <p>A108 Adam Street, New York, NY 535022</p>
+        </div>
+      </div>
+
+      <div class="contact1">
+        <div class="contact-icon">
+          <i class="fa-regular fa-envelope"></i>
+        </div>
+        <div class="con-info">
+          <h3>Email:</h3>
+          <p>info@example.com</p>
+        </div>
+      </div>
+
+      <div class="contact1">
+        <div class="contact-icon">
+          <i class="fa-solid fa-mobile-screen"></i>
+        </div>
+        <div class="con-info">
+          <h3>Call:</h3>
+          <p>+1 5589 55488 55s</p>
+        </div>
+      </div>
+
+    </div>
+
+
+    <div class="contact-reply">
+
+      <div class="contact-form">
+
+        <p>Get in Touch</p>
+      
+        <div class="blog-reply-form">
+
+          <div class="blog-reply-tex">
+            <textarea name="" id="" cols="30" rows="10" placeholder="Enter Message"></textarea>
+          </div>
+
+          <div class="blog-reply-inp">
+            <input type="text" placeholder="Name">
+            <input type="email" name="" id="" placeholder="Email">
+          </div>
+
+          <div class="blog-reply-inp2">
+            <input type="text" name="" id="" placeholder="Enter Subject">
+          </div>
+
+          <div class="blog-reply-btn">
+            <input type="submit" value="SEND MESSAGE">
+          </div>
+
+        </div>
+      </div>
+  </div>
+
+</section>
+
+
+<!-- footer section  -->
+
+<section class="footer-section">
+
+  <div class="footer-details">
+
+    <div class="footer1">
+      <h4>GP<span>.</span></h4>
+      <p>A108 Adam Street
+        NY 535022, USA</p>
+      <p><span>Phone:</span> +1 5589 55488 55</p>
+      <p><span>Email:</span>  info@example.com</p>
+
+      <div class="foo-socials">
+          <a href="#"><i class="fa-brands fa-square-x-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+    </div>
+
+    <div class="footer2">
+      <p>Useful Links</p>
+      <ul>
+        <li>
+          <i class="fa-solid fa-angle-right"></i>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <i class="fa-solid fa-angle-right"></i>
+          <a href="#">About us</a>
+        </li>
+        <li>
+          <i class="fa-solid fa-angle-right"></i>
+          <a href="#">Services</a>
+        </li>
+        <li>
+          <i class="fa-solid fa-angle-right"></i>
+          <a href="#">Terms of service</a>
+        </li>
+        <li>
+          <i class="fa-solid fa-angle-right"></i>
+          <a href="#">Privacy policy</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="footer3">
+      <p>Our Services</p>
+      <ul>
+        <li>
+          <i class="fa-solid fa-angle-right"></i>
+          <a href="#">
+            Web Design</a>
+        </li>
+        <li>
+          <i class="fa-solid fa-angle-right"></i>
+          <a href="#">
+            Web Development</a>
+        </li>
+        <li>
+          <i class="fa-solid fa-angle-right"></i>
+          <a href="#">
+            Product Management</a>
+        </li>
+        <li>
+          <i class="fa-solid fa-angle-right"></i>
+          <a href="#">
+            Marketing</a>
+        </li>
+        <li>
+          <i class="fa-solid fa-angle-right"></i>
+          <a href="#">
+            Graphic Design</a>
+        </li>
+      </ul>
+    </div>
+
+
+    <div class="newsletter">
+      <p class="n1">Our Newsletter</p>
+      <p class="n2">Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+
+      <div class="subs">
+        <input type="email" name="" id="" class="ns1">
+        <input type="submit" class="ns2" value="Subscribe">
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- copyright section  -->
+
+<section class="copyright-section">
+  <p>© Copyright Gp. All Rights Reserved</p>
+</section>
+
+
+
+<script src="script.js"></script>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+
+</body>
+
+</html>
